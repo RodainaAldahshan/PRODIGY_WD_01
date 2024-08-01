@@ -1,0 +1,356 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f07, #4a90e2);
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+.section {
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 30px;
+  font-family: Trebuchet MS (sans-serif);
+}
+
+p {
+  text-align: left;
+  font-size: 20px;
+  padding: 40px;
+  height: 300px;
+  width: 100%;
+  margin: 0 auto;
+  line-height: 1.5 !important;
+}
+h2 {
+  line-height: 1.2;
+}
+#logo {
+  font-size: 38px !important;
+  color: #6a0dad;
+  font-weight: bold;
+}
+
+.navbar {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar #logo {
+  color: white;
+  margin: 0;
+}
+
+ul {
+  font-size: 25px;
+  list-style: none;
+  float: left;
+  padding: 0px;
+  display: flex;
+  font-size: 20px;
+  width: 60%;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+li {
+  display: inline;
+  margin-right: 20px;
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar ul li:hover {
+  background-color: #f12992;
+  border-radius: 8px;
+  font-family: Tahoma;
+}
+.welcome-container {
+  font-size: 48px;
+  font-family: Georgia;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  padding: 40px;
+  float: left;
+  margin: 100px auto 0;
+  margin-left: 40px;
+  flex-direction: column;
+}
+#sometext {
+  padding: 25px;
+  font-size: 25px !important;
+  margin: 10px;
+}
+
+.btn {
+  display: inline;
+  background-color: #ec2c95;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 27px !important;
+  margin: 10px;
+  overflow: hidden;
+  max-width: 50%;
+}
+.btn:hover {
+  background-color: white;
+  color: #ec2c95;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  background: linear-gradient(135deg, #f06, #4a90e2);
+}
+.signup-btn {
+  display: inline;
+  background-color: #ec2c95;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 20px;
+  margin: 10px;
+}
+.signup {
+  width: 100%;
+  display: inline;
+  background-color: #ec2c95;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 20px;
+  margin: 10px;
+}
+.signup:hover {
+  background-color: white;
+  color: #ec2c95;
+}
+.signup-btn:hover {
+  background-color: white;
+  color: #ec2c95;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  ul {
+    font-size: 18px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  li {
+    margin: 10px 0;
+    padding: 10px 0;
+  }
+
+  .welcome-container {
+    margin: 90px auto 0;
+    font-size: 20px;
+  }
+  #sometext {
+    font-size: 17px;
+  }
+
+  .btn {
+    font-size: 18px;
+    padding: 8px 16px;
+  }
+  img {
+    max-width: 80%;
+    margin: 20px auto;
+  }
+}
+@media (min-width: 380px) {
+  #logo {
+    font-size: 24px;
+  }
+  ul {
+    gap: 10px;
+  }
+
+  #sometext {
+    font-size: 18px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+
+  img {
+    max-width: 40%;
+    margin: 60px 30px;
+  }
+}
+.section {
+  background: linear-gradient(120deg, #f3e5ff 0%, #e2b3ff 50%, #d180ff 100%);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+  padding: 40px;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.section h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.section p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  line-height: 1;
+  color: #666;
+}
+
+.section:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s, background 0.3s;
+}
+* {
+  box-sizing: border-box;
+}
+
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.icon {
+  padding: 10px;
+  background: #ec2c95;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid #ec2c95;
+}
+
+.btn {
+  background-color: #ec2c95;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 25px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .section {
+    font-size: 14px;
+    width: 90%;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .section {
+    font-size: 15px;
+    width: 85%;
+    padding: 15px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .section {
+    font-size: 16px;
+    width: 80%;
+    padding: 20px;
+  }
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+}
